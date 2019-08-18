@@ -11,17 +11,18 @@ onFormSubmit=(event)=>{
 };
 	render(){
 		return(
-		<div className="search-bar ui segment">
+		<div className="ui search segment" style={{backgroundColor:"blue"}}>
 			<form onSubmit={this.onFormSubmit} className="ui form">
 				<div className="field">
-				<label>Video Search</label>
+				<label ><h1><strong style={{color:"white"}}>VideoFind</strong><i className="film icon" style={{color:"white"}}></i>
+</h1></label>
 					<input 
 						value={this.state.term}
 						type="text"
 						onChange={this.onInputChange}
 						/>
+
 				</div>
-				
 				</form>
 			
 			</div>
